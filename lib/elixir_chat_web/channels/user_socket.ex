@@ -2,7 +2,7 @@ defmodule ElixirChatWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ElixirChatWeb.RoomChannel
+  channel "ChatRoom:default", ElixirChatWeb.ChatRoomChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
